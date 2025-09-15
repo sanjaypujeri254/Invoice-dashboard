@@ -10,6 +10,8 @@ import {
   Title,
   Tooltip,
   Legend,
+  BarController,
+  LineController, // Added controllers
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
@@ -22,7 +24,9 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  BarController, // Register BarController
+  LineController // Register LineController
 );
 
 const IncomeTrendChart = () => {
